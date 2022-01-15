@@ -449,6 +449,14 @@ template {
   width: 65px;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.search__button__button :hover {
+  background-color: #FFA500;
+  color: #000;
 }
 
 .user {
@@ -514,16 +522,10 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__search {
+  .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
-  .navbar__menu {
-    display: none;
-  }
-  .navbar__user {
-    display: none;
-  }
-  .menu__button {
+  .menu-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -533,18 +535,18 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     border: none;
-    background-color: #fff;
+    background-color: #FFF;
     cursor: pointer;
   }
-  .menu__button__line {
+  .menu-button__line {
     width: 16px;
     height: 1px;
     background-color: #333333;
@@ -554,7 +556,13 @@ template {
 @media (max-width: 576px) {
   .logo {
     width: 99px;
-    padding: 28px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .user__avatar {
+    width: 40px;
+    height: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */

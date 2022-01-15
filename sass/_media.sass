@@ -26,30 +26,29 @@
     max-width: 576px
     width: 92%
   .navbar
-    &__search
-      display: none
-    &__menu
-      display: none
-    &__user
+    &__search, &-menu, &__user
       display: none
   .menu
-    &__button
+    &-button
       display: flex
       width: 16px
       height: 11px
       padding: 0
       align-items: center
-      justify-content: center
+      justify-content: space-between
       flex-direction: column
       border: none
-      background-color: #fff
+      background-color: #FFF
       cursor: pointer
       &__line
         width: 16px
         height: 1px
-        background-color: $text-color
+        background-color: $text-color    
 @media (max-width: 576px)
   .logo
     width: 99px
-    padding: 28px
-          
+@media ( min-width: 320px) and (max-width: 480px)
+  .user
+    &__avatar
+      width: 40px
+      height: 40px
