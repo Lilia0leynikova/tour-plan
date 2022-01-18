@@ -7,6 +7,7 @@
   <title>Best Tour Plan - Hotel Booking</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -121,9 +122,35 @@
         <!-- /.hotel-info__rating -->
       </div>
       <!-- /.hotel-info -->
+      <div class="hotel-grid">
+        <div class="slider">
+
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"> <img src="img/slide.jpeg" alt="slide"></div>
+              <div class="swiper-slide"> <img src="img/slide-2.jpeg" alt="slide"></div>
+              <div class="swiper-slide"> <img src="img/slide-3.jpeg" alt="slide"></div>
+              <div class="swiper-slide"> <img src="img/slide-4.jpeg" alt="slide"></div>
+              <div class="swiper-slide"> <img src="img/slide-5.jpeg" alt="slide"></div>
+            </div>
+           
+            <!-- If we need navigation buttons -->
+            <button class="slider-button slider-button--prev"></button>
+            <button class="slider-button slider-button--next"></button>          
+          </div>
+           <!-- /.swiper -->
+        </div>
+        <!-- /.slider -->
+      </div>
+      <!-- /.hotel-grid -->
     </div>
     <!-- /.container -->
   </section>
   <!-- /.hotel -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
