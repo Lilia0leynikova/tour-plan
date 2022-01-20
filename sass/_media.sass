@@ -1,12 +1,12 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-  .slider
-    width: 590px
   .swiper
+    width: 590px
     &-slide
       &__image
         height: 100%
+        width: 100%
         object-fit: cover
 @media (max-width: 992px)
   .container, .newsletter-wrapper
@@ -40,6 +40,7 @@
   .slider
     width: 100%
   .swiper
+    width: 100%
     &-slide
       &__image
         width: 100%
@@ -87,7 +88,7 @@
       &__offer
         order: -1
         margin-left: 0
-  .slider
+  .swiper
     height: 350px
   .hotel
     &-right
@@ -106,7 +107,7 @@
 @media (max-width: 576px)
   .logo
     width: 99px
-  .slider
+  .swiper
     height: 250px
   .hotel
     &__slider
@@ -115,7 +116,7 @@
     padding: 76px 0 83px 0
     &__tittle
       margin-bottom: 37px
-  .subscribe
+    .subscribe
     width: 100%
 @media ( min-width: 320px) and (max-width: 480px)
   .newsletter
@@ -123,4 +124,6 @@
       font-size: 20px
       &__strong
         font-size: 30px
+  .subscribe
+    width: 100%
 
