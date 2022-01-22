@@ -981,16 +981,21 @@ template {
   background-color: transparent;
   cursor: pointer;
   z-index: 99;
+  text-align: center;
 }
 
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
   left: 0;
+  width: 10px;
+  height: 18px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
   right: 0;
+  width: 10px;
+  height: 18px;
 }
 
 .reviews-slider__profile {
@@ -1247,8 +1252,8 @@ template {
     margin-bottom: 20px;
   }
   .card {
-    width: 340px;
-    height: 230px;
+    width: 339px;
+    height: 255px;
   }
 }
 
@@ -1396,6 +1401,13 @@ template {
     width: 100%;
   }
   .reviews__tittle {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .activities {
+    padding: 40px 0 60px 0;
+  }
+  .activities__tittle {
     font-size: 18px;
     line-height: 23px;
   }
