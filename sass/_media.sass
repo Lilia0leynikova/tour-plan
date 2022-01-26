@@ -17,9 +17,7 @@
     width: 230px
     height: 230px
   .footer
-    &__contact
-      &-form
-        grid-column: 3 / 4
+    padding-top: 108px
     &__input
       flex-basis: 100%
     &__message
@@ -84,9 +82,12 @@
     width: 339px
     height: 255px  
   .footer
+    padding-top: 73px
     &-wrapper
       grid-template-columns: repeat(6, 1fr )
       grid-row-gap: 38px
+    &__logo
+      width: 104px
     &__input
       flex-basis: 48%
     &__logo
@@ -119,9 +120,43 @@
   .container
     max-width: 577px
     width: 92%
+  body
+    padding-top: 80px
   .navbar
-    &__search, &-menu, &__user
+    &--mobile
+      &_fixed
+        position: fixed
+        left: 0
+        top: 0
+        right: 0
+        z-index: 99
+    &__user, &__search
+      &--mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+          justify-content: center
+    &__user
+      flex-direction: column
+      justify-content: center
+    &-bottom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 78px
+      padding-top: 30px
+      &--visible
+        display: block
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
+        &--mobile
+          &_visible
+            display: block
   .menu
     &-button
       display: flex
@@ -138,6 +173,12 @@
         width: 16px
         height: 1px
         background-color: $text-color 
+  .user
+    &__name
+      &--light
+        color: $light
+        margin-left: 0
+        margin-top: 10px
   .stars
     flex-basis: content      
   .hotel
@@ -224,6 +265,8 @@
       line-height: 23px
   .card
     width: 100%
+  .footer
+    padding-top: 69px
 @media ( min-width: 320px) and (max-width: 480px)
   .newsletter
     &-tittle
