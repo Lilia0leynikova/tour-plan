@@ -488,6 +488,10 @@ template {
   line-height: 18px;
 }
 
+.navbar__user--mobile_visible, .navbar__search--mobile_visible {
+  display: none;
+}
+
 .breadcrumb-list {
   display: -webkit-box;
   display: -ms-flexbox;
