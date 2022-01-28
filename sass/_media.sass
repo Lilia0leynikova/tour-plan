@@ -1,7 +1,7 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-  .swiper
+  .hotel-slider
     width: 590px
     height: 450px
     &-slide
@@ -281,8 +281,12 @@
     &__logo
       grid-row: 1
       grid-column: 1
+    &__title
+      &--inline
+        margin-bottom: 22px
     &__social
       &-network
+        flex-direction: column
         grid-row: 2
         grid-column: 1
     &__aditional
@@ -299,6 +303,7 @@
         grid-row: 6
         grid-column: 1
       &-form
+        width: 281px
         grid-row: 7
         grid-column: 1
     &__bottom

@@ -52,23 +52,21 @@
     <!-- /.container -->  
 
    <div class="navbar-bottom">
-
-     <div class="container">
-
+      <div class="container">
        <ul class="navbar-menu">
-        <li class="navbar-menu__item navbar-menu__item--mobile_visible">
-          <a href="#" class="user navbar__user navbar__user--mobile_visible">
-          <img src="img/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar">
-          <span class="user__name user__name--light">Nathan</span>
-        </li>
-        <li class="navbar-menu__item navbar-menu__item--mobile_visible">
-          <form action="#" class="search navbar__search navbar__search--mobile_visible">
+         <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+           <a href="#" class="user navbar__user navbar__user--mobile_visible">
+           <img src="img/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar">
+           <span class="user__name user__name--light">Nathan</span>
+         </li>
+         <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+           <form action="#" class="search navbar__search navbar__search--mobile_visible">
             <input type="text" class="search__input" placeholder="Search Location" />
             <button class="search__button">
             <img src="img/search.svg" alt="Icon: Search">
             </button>
-          </form>
-      </li>
+           </form>
+         </li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
         
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
@@ -86,7 +84,7 @@
         </ul>
         <!-- /.navbar-menu -->
      </div>
-     <!-- /.container -->
+      <!-- /.container -->
    </div>
    <!-- /.navbar-button -->
   </header>
@@ -213,8 +211,8 @@
       <h2 class="newsletter-tittle newsletter__tittle">subscribe to our
         <span class="newsletter-tittle__strong">Newsletter</span>
       </h2>
-      <form action="#" class="subscribe newsletter__subscribe">
-        <input type="text" class="subscribe__input" placeholder="Your email address" />
+      <form action="send.php" method="post" class="subscribe newsletter__subscribe">
+        <input type="text" class="subscribe__input" placeholder="Your email address" name="email" />
         <button class="subscribe__button">Send</button>
       </form>
     </div>
@@ -448,10 +446,26 @@
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title">Send us a message</h3>
-          <form action="#" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*">
-            <input type="text" class="input footer__input" placeholder="Phone Number*">
-            <textarea cols="30" rows="10" class="footer__message" placeholder="Message"></textarea>
+          <form action="send.php" method="POST" class="footer__form">
+            <input 
+              type="text" 
+              class="input footer__input" 
+              placeholder="Your Full Name*"
+              name="name">
+
+            <input 
+              type="text" 
+              class="input footer__input" 
+              placeholder="Phone Number*"
+              name="phone">
+
+            <textarea 
+              cols="30"
+              rows="10"
+              class="footer__message" 
+              placeholder="Message"
+              name="message">
+            </textarea>
             <button class="button footer__button" type="submit">Send</button>
             <span class="footer__info">* Required Fields</span>
           </form>
