@@ -3,7 +3,7 @@
     max-width: 960px
   .hotel-slider
     width: 590px
-    height: 450px
+    height: 393px
     &-slide
       &__image
         height: 100%
@@ -19,7 +19,8 @@
   .footer
     padding-top: 108px
     &__input
-      flex-basis: 100%
+      &-group
+       flex-basis: 100%
     &__message
       flex-basis: 100%
     &__info
@@ -38,7 +39,7 @@
       margin-left: 47.25px
     &-menu
       padding-top: 22px
-      padding-bottom: 22px
+      padding-bottom: 19px
       &__link
         font-size: 12px
         line-height: 15px 
@@ -46,6 +47,7 @@
     &__input
       width: 340px
   .hotel
+    padding-bottom: 58px
     &-grid
       flex-direction: column
     &__slider
@@ -56,6 +58,7 @@
     width: 340px
   .hotel-slider
     width: 100%
+    height: 450px
     &-slide
       &__image
         width: 100%
@@ -65,6 +68,7 @@
     &__tittle
       font-size: 30px
       line-height: 38px
+      margin-bottom: 50px
     &-slider
       &__item
         max-width: 580px
@@ -73,8 +77,10 @@
   .map
     width: 340px
   .activities
+    padding-bottom: 48px
     &-wrapper
       flex-wrap: wrap
+      align-items: center
     &__card
       margin-bottom: 20px
   .card
@@ -86,9 +92,14 @@
       grid-template-columns: repeat(6, 1fr )
       grid-row-gap: 38px
     &__logo
-      width: 104px
+      width: 100px
+      height: 110px
     &__input
-      flex-basis: 48%
+      &-group
+        max-width: 254px
+        margin-right: 35px
+    &__message
+     max-width: 544px
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -111,6 +122,8 @@
       &-form
         grid-row: 4
         grid-column: span 5 
+    &__info
+      padding-right: 35px
     &__bottom
       &-disclaimer
        max-width: 283px
@@ -238,7 +251,8 @@
     height: 255px   
   .footer
     &__input
-      flex-basis: 100%      
+      &-group
+        flex-basis: 100%      
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -310,7 +324,7 @@
         flex-wrap: wrap
   .modal
     &__dialog
-      width: 95%
+      width: 85%
       padding: 10px
     &__message
       width: 100%

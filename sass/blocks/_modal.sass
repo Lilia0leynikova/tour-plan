@@ -18,7 +18,8 @@
     top: 50%
     left: 50%
     max-width: 478px
-    padding: 33px 88px
+    height: 478px
+    padding: 16px 70px
     background-color: $dark
     transform: translate(-50%, -50%)
     color: $light
@@ -27,6 +28,7 @@
     visibility: hidden 
     opacity: 0
     transform: opacity 0.2s
+    overflow-y: auto
     &--visible
      visibility: visible 
      opacity: 1
@@ -50,13 +52,14 @@
     justify-content: space-between
     flex-wrap: wrap
   &__input
-    width: 100%
-    margin-bottom: 15px
+    width: 310px
+    margin-top: 15px
   &__message
-    width: 302px
-    min-height: 123px
-    margin-bottom: 15px
+    width: 310px
+    height: 123px
+    margin-top: 15px
   &__button
+    margin-top: 15px
     margin-right: 30px
   &__info
     font-style: normal  
