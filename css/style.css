@@ -887,7 +887,7 @@ template {
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter-bg.jpeg);
+  background-image: url(../img/newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   block-size: cover;
@@ -1900,6 +1900,9 @@ template {
   .footer__message {
     max-width: 544px;
   }
+  .modal__dialog {
+    height: 478px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1937,6 +1940,9 @@ template {
   }
   .footer {
     padding-top: 69px;
+  }
+  .modal__dialog {
+    height: 478px;
   }
 }
 
@@ -2009,6 +2015,7 @@ template {
         flex-wrap: wrap;
   }
   .modal__dialog {
+    height: 478px;
     width: 85%;
     padding: 10px;
   }
