@@ -54,8 +54,8 @@ $(".form").each(function(){
   
   messages: {
     name: {
-      required: "Укажите имя",
-      minlength: "Имя должно быть не менее 2 символов",
+      required: "Your Full Name",
+      minlength: "Please enter at least 2 letters",
     }, 
 
     email: {
@@ -63,10 +63,11 @@ $(".form").each(function(){
       email: "Your email address must be in the format of name@domain.com"
     },
     phone: {
-       required: "Телефон обязателен",
+       required: "Phone required",
     },
   },
 });
 });
+ AOS.init();
 });
 $("#phone").mask("+7(999)999-99-99");
