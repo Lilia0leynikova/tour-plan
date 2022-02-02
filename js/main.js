@@ -54,7 +54,7 @@ $(".form").each(function(){
   
   messages: {
     name: {
-      required: "Your Full Name",
+      required: "Plase specify your Name",
       minlength: "Please enter at least 2 letters",
     }, 
 
@@ -71,3 +71,16 @@ $(".form").each(function(){
  AOS.init();
 });
 $("#phone").mask("+7(999)999-99-99");
+
+$(".subscribe").each(function(){
+  $(this).validate({
+  errorClass: "invalid",
+
+  message: {
+    subscribe:{
+     required: "Plase specify your email address",
+     email: "Your email address must be in the format of name@domain.com"
+    },
+  },
+  });
+  });

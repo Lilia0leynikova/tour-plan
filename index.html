@@ -150,21 +150,21 @@
                 src="img/slide.jpeg" alt="slide">
               </div>
               <div class="swiper-slide hotel-slider__item">
-                 <img 
+                 <img loading="lazy"
                  class="hotel-slider__image"
-                 src="img/slide-2.jpeg" alt="slide">
+                 src="img/slide-2.gpeg" alt="slide">
                 </div>
               <div class="swiper-slide hotel-slider__item"> 
-                <img class="hotel-slider__image" 
+                <img loading="lazy" class="hotel-slider__image" 
                 src="img/slide-3.jpeg" alt="slide">
               </div>
               <div class="swiper-slide hotel-slider__item"> 
-                <img 
+                <img loading="lazy"
                 class="hotel-slider__image" 
                 src="img/slide-4.jpeg" alt="slide">
               </div>
               <div class="swiper-slide hotel-slider__item"> 
-                <img
+                <img loading="lazy"
                  class="hotel-slider__image" 
                  src="img/slide-5.jpeg" alt="slide">
               </div>
@@ -232,18 +232,13 @@
       <form action="send.php" method="POST" 
         class="subscribe newsletter__subscribe form" data-aos="fade-right"
         data-aos-delay="200">
-
-        <div class="subscribe__input-group">
           <input 
             type="email" 
             class="subscribe__input"
             placeholder="Your email address" 
-            name="email" 
+            name="subscribe" 
             required 
-            minlength="2"
-           >
-        </div>
-       
+           >       
         <button class="subscribe__button">Send</button>
       </form>
     </div>
@@ -570,11 +565,11 @@
     <!-- /.modal__dialog -->
   </div>
   <!-- /.modal -->
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/jquery.mask.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/jquery-3.6.0.min.js" async></script>
+  <script src="js/swiper-bundle.min.js" async></script>
+  <script src="js/jquery.validate.min.js"async></script>
+  <script src="js/jquery.mask.min.js" async></script>
+  <script src="js/aos.js" async></script>
+  <script src="js/main.js" async></script>
   </body>
 </html>
