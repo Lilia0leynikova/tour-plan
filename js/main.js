@@ -72,9 +72,8 @@ $(".form").each(function(){
 });
 $("#phone").mask("+7(999)999-99-99");
 
-$(".subscribe").each(function(){
-  $(this).validate({
-  errorClass: "invalid",
+$(".subscribe").validate({
+   errorClass: "error",
 
   message: {
     subscribe:{
@@ -83,4 +82,4 @@ $(".subscribe").each(function(){
     },
   },
   });
-  });
+

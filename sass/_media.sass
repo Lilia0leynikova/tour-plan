@@ -90,14 +90,15 @@
     padding-top: 73px
     &-wrapper
       grid-template-columns: repeat(6, 1fr )
-      grid-row-gap: 38px
+      grid-row-gap: 46px
     &__logo
-      width: 100px
-      height: 110px
+      max-width: 100px
+      min-height: 110px
     &__input
       &-group
         max-width: 254px
         margin-right: 35px
+        flex-basis: 43%
     &__message
      max-width: 544px
     &__logo
@@ -106,25 +107,28 @@
     &__social
       &-network
         grid-row: 1 / 2
-        grid-column: span 4
+        grid-column: span 5
         align-self: center
     &__categories
       grid-row: 2 / 3
       grid-column: span 2
     &__legal
       grid-column: span 2
+      max-width: 202px
     &__aditional
       grid-column: span 2
+      max-width: 260px
     &__contact
       &-details
         grid-row: 3
         grid-column: span 5
       &-form
         grid-row: 4
-        grid-column: span 5 
+        grid-column: span 5      
     &__info
       padding-right: 35px
     &__bottom
+      padding-top: 63px
       &-disclaimer
        max-width: 283px
        margin-left: 0  
@@ -225,6 +229,17 @@
       width: 92%
       flex-direction: column
       align-items: flex-start
+    &-tittle
+      font-style: normal
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-style: normal
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
+        margin-bottom: 37px
   .reviews
     &-slider
       &__item
@@ -250,6 +265,9 @@
     width: 49%
     height: 255px   
   .footer
+    &__logo
+      width: 100px
+      height: 110px
     &__input
       flex-basis: 100% 
       &-group
