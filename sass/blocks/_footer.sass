@@ -52,6 +52,7 @@
       margin: 0 43px 0 0
   &__item
    display: flex
+   flex-wrap: wrap
    align-items: flex-start
    font-style: normal
    font-weight: normal
@@ -69,6 +70,12 @@
   &__link
     text-decoration: none
     color: inherit
+    &:hover 
+      background-color: #FFA500 
+  &__phone
+    display: block
+    text-decoration: none
+    color: $footer-text-color
   &__input
     width: 100%
     &-group

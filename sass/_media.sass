@@ -132,13 +132,29 @@
       &-disclaimer
        max-width: 283px
        margin-left: 0  
-@media (max-width: 768px)
+@media (max-width: 767px)
   .container
     max-width: 577px
     width: 92%
   body
     padding-top: 80px
   .navbar
+    &__link
+      color: inherit
+      text-decoration: none
+      text-transform: uppercase
+      margin: 0
+      font-size: 14px
+      line-height: 18px
+      cursor: pointer
+    &__button
+      position: absolute 
+      top: 0
+      right: 0
+      height: 100%
+      width: 63px 
+      border: none
+      background-color: $primary 
     &--mobile
       &_fixed
         position: fixed
@@ -221,6 +237,16 @@
       min-height: 450px
   .booking
     width: 100%
+    &__button
+      width: 100%
+      min-height: 45px
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      border-radius: 4px
+      background-color: $primary
+      border: none
+      color: $light
   .map
     width: 100%
   .newsletter
@@ -240,6 +266,15 @@
         font-size: 30px
         line-height: 38px
         margin-bottom: 37px
+    &__button
+      position: absolute
+      min-width: 65px
+      right: 0
+      top: 0
+      height: 100%
+      border: none
+      background-color: $primary
+      color: $light
   .reviews
     &-slider
       &__item
@@ -264,10 +299,25 @@
   .card
     width: 49%
     height: 255px   
+    &__button
+      font-style: normal
+      font-weight: 600
+      font-size: 11px
+      line-height: 16px
+      color: $light
+      padding: 7px 22px 7px 21px
+      max-width: 100px
+      max-height: 30px
+      border: none
+      background-color: $primary
+      border-radius: 4px
   .footer
     &__logo
       width: 100px
       height: 110px
+    &__link
+      text-decoration: none
+      color: inherit
     &__input
       flex-basis: 100% 
       &-group
@@ -307,7 +357,7 @@
     padding-top: 69px
   .modal
     &__dialog
-      height: 478px  
+      max-height: 70vh  
 @media ( min-width: 320px) and (max-width: 480px)
   .newsletter
     &-tittle
@@ -352,9 +402,11 @@
         flex-wrap: wrap
   .modal
     &__dialog
-      height: 478px
+      max-height: 70vh
       width: 85%
       padding: 10px
+    &__input
+      width: 100%
     &__message
       width: 100%
 
